@@ -1,67 +1,58 @@
-Sales Analytics System
+# Sales Analytics System
 
-This project is a Sales Analytics System developed in Python as part of a graded assignment.  
-The main objective of this project is to work with messy sales transaction data, clean and validate it, perform different sales analyses, enrich product information using an API, and generate a detailed sales report.
+This project is a Sales Analytics System built using Python as part of a graded assignment.  
+The main aim of this project is to work with raw sales transaction data, clean and validate it, perform basic sales analysis, enrich product information using an API, and generate a final sales report.
 
-The project is designed to simulate a real-world data analysis workflow where raw data is processed step by step to produce meaningful insights.
+The project follows a step-by-step approach where data is first read from a file, processed, analyzed, and finally written into a report file.
 
----
+## Project Structure
 
+sales-analytics-system/
+├── README.md  
+├── main.py  
+├── utils/  
+│   ├── file_handler.py  
+│   ├── data_processor.py  
+│   └── api_handler.py  
+├── data/  
+│   └── sales_data.txt  
+├── output/  
+│   └── sales_report.txt  
+└── requirements.txt  
 
-
-What the Project Does
+## What This Project Does
 
 - Reads sales data from a text file  
-- Handles messy and invalid records safely  
-- Cleans and validates transaction data  
-- Performs sales analysis such as:
-  - Total revenue calculation  
-  - Region-wise sales performance  
-  - Top selling products  
-  - Daily sales trends  
-- Fetches product details using an API and enriches the sales data  
-- Generates a well-formatted sales report  
-- Displays progress and results in the console  
+- Cleans and validates transaction records  
+- Separates valid and invalid records  
+- Calculates total revenue  
+- Performs region-wise sales analysis  
+- Finds top selling products  
+- Enriches product data using an external API  
+- Generates a final sales report  
 
-
-
-How to Run the Project
+## How to Run the Code
 
 1. Make sure Python 3 is installed on your system  
-2. Open terminal or command prompt inside the project folder  
-3. Install required dependencies by running:
+2. Open the terminal or command prompt inside the project folder  
+3. Install required dependencies using:  
 
    pip install -r requirements.txt  
 
-4. Run the main program using:
+4. Run the program using:  
 
    python main.py  
 
-5. After execution:
-   - The console will show step-by-step execution messages  
-   - A detailed report will be generated in:
+5. After execution, the output report will be generated inside the `output` folder.
 
-     output/sales_report.txt  
+## Output
 
+- Console output showing processing details  
+- A text file `sales_report.txt` containing the final sales analysis  
 
-Output Generated
+## Submission Details
 
-- Console output showing the complete workflow  
-- A final text report containing all analysis results
-  
-Error Handling
-
-- Invalid or incomplete records are skipped  
-- Errors are handled using try-except blocks  
-- The program continues running without crashing 
-
-Submission Notes
-
-- All project files are pushed to a public GitHub repository  
+- All files are pushed to a GitHub repository  
 - Proper folder structure is maintained  
-- This README file explains how to run the code clearly  
+- This README explains how to run the code  
 - The repository link is submitted for evaluation  
-
-
-Sales Analytics System  
-Graded Assignment Submission
